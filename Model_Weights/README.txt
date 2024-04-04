@@ -1,5 +1,5 @@
 This directory contains 3 model weights (.pt) 
-You can locate and use these weights when you run Perception.py
+You can locate and use these weights when you run AutoPercept.py
 -high.pt
 	-> Trained for 45 Epochs 
 	-> maP50-95 = 0.64
