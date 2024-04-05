@@ -8,7 +8,7 @@ AutoPercept leverages the power of YOLO (You Only Look Once) for real-time objec
 - **YOLO Object Detection:** Real-time detection and tracking of objects using YOLO architecture.
 - **Real Time Counting:** Functionality for counting and displaying the amount of detections for each class has been added
 - **Pythonic UI** : AutoPercept can also be used as a Wrapper or Interface to run inference on videos using custom model weights.
-- **Savable Results** : Functionality to save the video with the detections in a given directory with a given name has also been added
+- **Saveable Results** : Functionality to save the video with the detections in a given directory with a given name has also been added
 - **KITTI Dataset:** Trained on the KITTI dataset, which includes various object categories commonly encountered in autonomous driving scenarios.
 
 ## Getting Started
