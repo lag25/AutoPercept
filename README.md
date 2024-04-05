@@ -2,7 +2,7 @@
 A project focused on YOLO object detection trained on the KITTI dataset. This repository serves as a starting point for implementing object detection capabilities in autonomous systems using YOLO architecture.
 
 ## Overview
-AutoPercept leverages the power of YOLO (You Only Look Once) for real-time object detection and tracking. The model is trained on the KITTI dataset, enabling accurate detection of objects in various driving scenarios. The open sourced YOLOv8 weights from Ultralytics has been utilized for model training.
+AutoPercept leverages the power of YOLO (You Only Look Once) for real-time object detection and tracking. The model is trained on the KITTI dataset, enabling accurate detection of objects in various driving scenarios. The open sourced YOLOv8 weights from Ultralytics have been utilized for model training.
 
 ## Key Features
 - **YOLO Object Detection:** Real-time detection and tracking of objects using YOLO architecture.
