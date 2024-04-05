@@ -1,0 +1,8 @@
+ultralytics
+numpy
+pandas
+matplotlib
+scikit-learn
+pillow
+opencv-python
+gooey
