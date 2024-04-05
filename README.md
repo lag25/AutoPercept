@@ -54,7 +54,8 @@ https://github.com/lag25/AutoPercept/assets/116341862/c158140f-758d-4827-90d0-e4
 ![readme_ex](https://github.com/lag25/AutoPercept/assets/116341862/e123094e-683e-4043-8ea3-c34cfeb64ab7)
 
 ## Future Scope
-- **Monocular Depth Estimation** : I aim to add functionality of simultaneous depth estimation and objection detection very soon
-- **Simultaneous Localization and Mapping (SLAM)** : Due to the fact that the KITTI dataset also contains LiDAR and 3D Point Cloud data, It will be possible to add functionalities to visualize SLAM Processes in real time
+- **Monocular Depth Estimation** : I aim to add functionality of simultaneous depth estimation and objection detection very soon.
+- **Simultaneous Localization and Mapping (SLAM)** : Due to the fact that the KITTI dataset also contains LiDAR and 3D Point Cloud data, It will be possible to add functionalities to visualize SLAM Processes in real time.
+- **Object Tracking and Projection** : Using Kalman Filter, I am currently working on creating methods to Track these object's movements and visualize them in real time.
 
 
