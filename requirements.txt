@@ -8,3 +8,5 @@ opencv-python
 gooey
 transformers
 torch
+torchvision==0.12.0+cu118
+torchaudio==0.11.0 
