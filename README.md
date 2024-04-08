@@ -50,6 +50,7 @@ AutoPercept uses YOLO (You Only Look Once) for real-time object detection and tr
     ![results](https://github.com/lag25/AutoPercept/assets/116341862/4a3964e9-4940-4f4c-b4b6-4cb70dd03f35)
 ## Working Examples
 https://github.com/lag25/AutoPercept/assets/116341862/c158140f-758d-4827-90d0-e42010b9d60c
+
 ![readme_ex](https://github.com/lag25/AutoPercept/assets/116341862/e123094e-683e-4043-8ea3-c34cfeb64ab7)
 
 
