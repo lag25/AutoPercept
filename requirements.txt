@@ -6,3 +6,5 @@ scikit-learn
 pillow
 opencv-python
 gooey
+transformers
+torch
