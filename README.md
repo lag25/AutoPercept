@@ -54,7 +54,7 @@ https://github.com/lag25/AutoPercept/assets/116341862/c158140f-758d-4827-90d0-e4
 ![readme_ex](https://github.com/lag25/AutoPercept/assets/116341862/e123094e-683e-4043-8ea3-c34cfeb64ab7)
 
 
-![readme_ex](https://github.com/lag25/AutoPercept/assets/116341862/7d8bd1b7-b24c-4181-9f67-88d3cbc52b21)
+https://github.com/lag25/AutoPercept/assets/116341862/7d8bd1b7-b24c-4181-9f67-88d3cbc52b21
 
 
 ## Future Scope
