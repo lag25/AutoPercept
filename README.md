@@ -5,11 +5,12 @@ A project focused on Autonomous Vehicle Perception processes. This repository se
 AutoPercept uses YOLO (You Only Look Once) for real-time object detection and tracking and a vision transformer called MiDaS for a Monocular Depth Estimation. The model is trained on the KITTI dataset, enabling accurate detection and depth estimation of objects in various driving scenarios. The open sourced YOLOv8 weights from Ultralytics have been utilized for object detection model training. Zero Shot Depth Estimation is done using MiDAS since the model has already been trained on the KITTI dataset (You can learn more about MiDaS at https://github.com/isl-org/MiDaS)
 
 ## Key Features
-- **YOLO Object Detection:** Real-time detection and tracking of objects using YOLO architecture.
+- **YOLO Object Detection:** Real-time detection of objects using YOLO architecture.
 - **Real Time Counting:** Functionality for counting and displaying the amount of detections for each class has been added
-- **Pythonic UI** : AutoPercept can also be used as a Wrapper or Interface to run inference on videos using custom model weights.
+- **Pythonic UI** : AutoPercept can also be used as a Wrapper or Interface to run inference on videos using custom model weights
+- **Depth Estimation:** Monocular Depth Estimation has been added using MiDaS, a Vision Transformer.
 - **Saveable Results** : Functionality to save the video with the detections in a given directory with a given name has also been added
-- **KITTI Dataset:** Trained on the KITTI dataset, which includes various object categories commonly encountered in autonomous driving scenarios.
+- **KITTI Dataset:** Trained on the KITTI dataset, which includes various object categories commonly encountered in autonomous driving scenarios
 
 ## Getting Started
 1. **Clone the Repository:**
