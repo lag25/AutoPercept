@@ -3,10 +3,10 @@ import time
 import argparse
 from ultralytics import YOLO
 from collections import defaultdict
-# Import Gooey
+import torch
 from gooey import Gooey, GooeyParser
 
-
+device = "cuda:0" if torch.cuda.is_available() else "cpu"  # Assigns a GPU for inference, if available. if not, assigns cpu
 classes = {0 : 'Car',    ## Class with thier corresponding label
   1: 'Pedestrian',
  2 : 'Van',
@@ -16,8 +16,13 @@ classes = {0 : 'Car',    ## Class with thier corresponding label
  6: 'Tram',
   7: 'Person_sitting'}
 
-def count(tensor):
-    res = defaultdict(int)
+def count(tensor):             
+  '''
+  description : A function to return the number of classes detected in each prediction
+  params: Tensor -> An encoded torch tensor containing the class predictions
+  returns -> A dictionary of structure {str(class) : Number_Detections(int)}
+  '''
+  res = defaultdict(int)
     for i in tensor:
         res[classes[int(i)]]+=1
     return res
@@ -25,7 +30,7 @@ def count(tensor):
 
 @Gooey
 def main():
-    parser = GooeyParser(description="Object Detection using YOLOv8")
+    parser = GooeyParser(description="Object Detection using YOLOv8")   ## ArgParse arguments for Gooey Interface
 
     parser.add_argument("model_path", help="Path to YOLOv8 model file", widget="FileChooser")
     parser.add_argument("video_path", help="Path to input video file", widget="FileChooser")
@@ -61,9 +66,9 @@ def main():
             start_frame_time = time.time()
 
             # Run YOLOv8 inference on the frame
-            results = model(frame)
+            results = model(frame,device=device)
             for r in results:
-                f = count(r.boxes.cls)
+                f = count(r.boxes.cls)   ## Counting the amount of detection per each classs
 
 
 
@@ -72,13 +77,12 @@ def main():
             annotated_frame = results[0].plot()
             markers = [len(frame[2]) - 180, 50]
             for cls in f:
-                clr = [100, 100, 100]
 
                 # Get pixel intensity values at markers position
                 pixel_intensity = frame[markers[1], markers[0]]
 
                 # Compute inverse of pixel intensity values and convert to integers
-                inverse_intensity = [int(255 - intensity)//2 for intensity in pixel_intensity]
+                inverse_intensity = [int(255 - intensity)//2 for intensity in pixel_intensity]   ## This is actually a redundant LOC i was too lazy to change. But i will soon enough :')
                 inverse_intensity[0] = 110
                 inverse_intensity[1] = 209
                 # Set color for text
