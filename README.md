@@ -25,10 +25,14 @@ AutoPercept uses YOLO (You Only Look Once) for real-time object detection and tr
 
 4. **Running the Gooey App:**
    ```bash
-     python AutoPercept.py
+   python AutoPercept.py
     ```
+      or
+   ```bash
+   python ViT.py
+   ```
 
-5. **Specifying Pre-inference parameters**
+6. **Specifying Pre-inference parameters**
     ![image](https://github.com/lag25/AutoPercept/assets/116341862/694004f0-da32-4a91-a544-fb0fd4de4836)
 
     
@@ -36,7 +40,7 @@ AutoPercept uses YOLO (You Only Look Once) for real-time object detection and tr
     - NOTE : Trained Weights can be found in the "Model_Weights" directory
     - NOTE : Some example videos can be found to run inference on in the "Sample_Vids" directory
   
-6. **Inference**
+7. **Inference**
     ![image](https://github.com/lag25/AutoPercept/assets/116341862/1e13563f-3717-4774-a802-d97459bb86f9)
 
    - After specifying the pre-inference params, hit the "Start" Button to start the inference process
