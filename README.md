@@ -39,7 +39,6 @@ AutoPercept uses YOLO (You Only Look Once) for real-time object detection and tr
     
     
     - NOTE : Trained Weights can be found in the "Model_Weights" directory
-    - NOTE : Some example videos can be found to run inference on in the "Sample_Vids" directory
   
 7. **Inference**
     ![image](https://github.com/lag25/AutoPercept/assets/116341862/1e13563f-3717-4774-a802-d97459bb86f9)
@@ -50,9 +49,13 @@ AutoPercept uses YOLO (You Only Look Once) for real-time object detection and tr
 
 ## Performance Metrics
 1. Precision, Recall, Mean Average Precision@IoU=0.5 and Mean Average Precision@IoU=0.5-0.95 for each class over the validation dataset
+
 ![image](https://github.com/lag25/AutoPercept/assets/116341862/a99057b6-73df-4d3f-8e44-fae4197a5711)
+
 2. Model Training Performance
-    ![results](https://github.com/lag25/AutoPercept/assets/116341862/4a3964e9-4940-4f4c-b4b6-4cb70dd03f35)
+
+![results](https://github.com/lag25/AutoPercept/assets/116341862/4a3964e9-4940-4f4c-b4b6-4cb70dd03f35)
+
 ## Working Examples
 https://github.com/lag25/AutoPercept/assets/116341862/c158140f-758d-4827-90d0-e42010b9d60c
 
