@@ -70,6 +70,6 @@ https://github.com/lag25/AutoPercept/assets/116341862/7d8bd1b7-b24c-4181-9f67-88
 - **Quantization** : Currently, the MiDaS depth estimation model runs on 1-10 fps depending upon the resolution of the image. To makes the inference faster I am going to add 4 bit Quantization to the model. This will involve converting the model hyperparameters from their 32 bit floating point representation to a 4 bit one
 - **Simultaneous Localization and Mapping (SLAM)** : Due to the fact that the KITTI dataset also contains LiDAR and 3D Point Cloud data, It will be possible to add functionalities to visualize SLAM Processes in real time.
 - **Object Tracking and Projection** : Using Kalman Filter, I am currently working on creating methods to Track these object's movements and visualize them in real time.
-- **YOLOv9** : Since the initiation of this project, YOLOv9 was released. Ultralytics state that this new model beats all SOTA Object Detection Benchmarks. I will soon add functionality for YOLOv9 inference
+- **YOLOv10** : Since the initiation of this project, YOLOv10 was released. Ultralytics state that this new model beats all SOTA Object Detection Benchmarks. I will soon add functionality for YOLOv10 inference
 
 
