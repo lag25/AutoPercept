@@ -67,7 +67,7 @@ https://github.com/lag25/AutoPercept/assets/116341862/7d8bd1b7-b24c-4181-9f67-88
 
 ## Future Scope
 - ~~**Monocular Depth Estimation** : I aim to add functionality of simultaneous depth estimation and objection detection very soon.~~ (_This functionality has been added_)
-- ~~**FPS Optimization** : The model seems to be working at a mediocre FPS. I will be looking to solve this soon enough~~. (__This issue was being caused because of a bug that was not letting the program utilize. It has now been fixed_)
+- ~~**FPS Optimization** : The model seems to be working at a mediocre FPS. I will be looking to solve this soon enough~~. (_This issue was being caused because of a bug that was not letting the program utilize the GPU. It has now been fixed_)
 - **Quantization** : Currently, the MiDaS depth estimation model runs on 1-10 fps depending upon the resolution of the image. To makes the inference faster I am going to add 4 bit Quantization to the model. This will involve converting the model hyperparameters from their 32 bit floating point representation to a 4 bit one
 - **Simultaneous Localization and Mapping (SLAM)** : Due to the fact that the KITTI dataset also contains LiDAR and 3D Point Cloud data, It will be possible to add functionalities to visualize SLAM Processes in real time.
 - **Object Tracking and Projection** : Using Kalman Filter, I am currently working on creating methods to Track these object's movements and visualize them in real time.
