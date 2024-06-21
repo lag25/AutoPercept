@@ -10,7 +10,7 @@ import torch
 import numpy as np
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-# Import the model and feature extractor
+# Model import
 model = DPTForDepthEstimation.from_pretrained("Intel/dpt-hybrid-midas",low_cpu_mem_usage=True).to(device)
 feature_extractor = DPTFeatureExtractor.from_pretrained("Intel/dpt-hybrid-midas")
 
@@ -30,7 +30,7 @@ def image2formatted(image):
         outputs = model(**inputs)
         predicted_depth = outputs.predicted_depth
 
-    # Get the dimensions of the original image
+    # dimensions of the original image
     original_height, original_width, _ = image.shape
 
     # Interpolate the predicted depth map to match the original image size
@@ -41,7 +41,7 @@ def image2formatted(image):
         align_corners=False,
     )
 
-    # Visualize the prediction
+    # prediction visualization
     output = prediction.squeeze().cpu().numpy()
     formatted = (output * 255 / np.max(output)).astype("uint8")
     return formatted
@@ -90,7 +90,7 @@ def main():
             heatmap_bgr = cv2.cvtColor((heatmap[:, :, :3] * 255).astype(np.uint8), cv2.COLOR_RGB2BGR)
 
 
-            # Calculate frame processing time
+            #frame processing time
             end_frame_time = time.time()
             frame_processing_time = end_frame_time - start_frame_time
 
@@ -102,10 +102,10 @@ def main():
             fps = frame_count / elapsed_time
             cv2.putText(heatmap_bgr, f"FPS: {round(fps)}", (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
 
-            # Write the annotated frame to the output video
+            # Writing the annotated frame to the output video
             out.write(heatmap_bgr)
 
-            # Display the annotated frame
+            # Displaying the annotated frame
             cv2.imshow("YOLOv8 Inference", heatmap_bgr)
             cv2.putText(depth_map, f"FPS: {round(fps)}", (30, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 0), 2)
 
